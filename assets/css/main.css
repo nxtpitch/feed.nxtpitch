@@ -18,6 +18,10 @@
 		vertical-align: baseline;
 	}
 
+	p a {
+		text-decoration: none;
+	}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -1261,24 +1265,6 @@
 
 		}
 
-		@media screen and (max-width: 736px) {
-
-			.poptrox-popup:before {
-				display: none;
-			}
-
-			.poptrox-popup .caption {
-				display: none !important;
-			}
-
-			.poptrox-popup .closer,
-			.poptrox-popup .nav-previous,
-			.poptrox-popup .nav-next {
-				display: none !important;
-			}
-
-		}
-
 /* Wrapper */
 
 	#wrapper {
@@ -1594,6 +1580,16 @@
 				display: none;
 			}
 
+			a {
+				-moz-transition: color 0.2s ease, border-color 0.2s ease;
+				-webkit-transition: color 0.2s ease, border-color 0.2s ease;
+				-ms-transition: color 0.2s ease, border-color 0.2s ease;
+				transition: color 0.2s ease, border-color 0.2s ease;
+				color: white;
+				text-decoration: none !important;
+				outline: 0;
+			}
+
 		#main:after {
 			-moz-pointer-events: none;
 			-webkit-pointer-events: none;
@@ -1650,7 +1646,6 @@
 			-ms-transition-delay: 2.525s;
 			transition-delay: 2.525s;
 			height: calc(40vh - 2em);
-			min-height: 20em;
 			width: 25%;
 		}
 
